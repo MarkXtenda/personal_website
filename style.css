@@ -9,7 +9,7 @@ body  {
   }
 
   header {
-    height: 10%;
+    height: 100px;
     position: fixed;
     flex-direction: row;
     top: 0;
@@ -44,38 +44,38 @@ body  {
   }
 
   #home {
-    padding: 11.4em 0 11.4em 0;
+    flex-flow: wrap;
+    padding: 282.4px 40px 182.4px 40px;
     flex-direction: row;
     justify-content: space-around;
+    
   }
-
-
-  #home img {
-    align-items: center;
+  #languages {
+    justify-content: space-around;
   }
   #projects {
-    padding: 11.4em 0 11.4em 0;
-    background-image: url("./images/background.jpg");
+    padding: 182.4px 0 172.4px 0;
     background-color: #152547;
     text-align: center;
+    box-shadow: 0px -3px 7px -3px #101624, 0px 3px 7px -3px #101624;
+    margin: 0px 0px 10px 0;
+    
   }
-  #projects p {
-    margin-inline: 17%;
-  }
-  #project figure {
-    display: flex;
-  }
-  #projects div {
+
+  .projects_examples {
+    display: inline-block;
+    margin: 15px;
     background-color: #101624;
     height: 100px;
-    width: 100px;
+    width: 200px;
   }
   nav a {
     padding: 10px;
   }
   
   #contact {
-    background: #152547;
+    flex-flow: wrap;
+    background: #4D7EA8;
     justify-content: space-around;
     padding: 0 10px 0 10px;
     margin: auto;
@@ -86,10 +86,13 @@ body  {
   }
 
   #about {
-    margin: auto;
-    background-color: #27324A;
+    justify-content: space-around;
+    background-color: #152547;
+    box-shadow: 0px -3px 7px -3px #101624;
   }
-
+  i {
+    font-size: 50px;
+  }
   a {
     color: white;
     text-decoration: none;
@@ -107,13 +110,14 @@ body  {
     background-position-x: left;
   }
 
-
-  #about, header, #home, #projects, #contact, #about{
-    display: flex;
+  #intro, #home img, #projects_menu {
+    margin: 20px;
   }
-
-  * {
-    border : none;
+  #intro h1, #projects h1 {
+    margin-bottom: 60px;
+  }
+  #about, header, #home, #contact, #about{
+    display: flex;
   }
 
   input { 
