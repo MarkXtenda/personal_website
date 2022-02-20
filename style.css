@@ -9,10 +9,10 @@ body  {
   }
 
   header {
-    height: auto;
     height: 100px;
     position: fixed;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     top: 0;
     left: 0;
     right: 0;
@@ -20,28 +20,22 @@ body  {
     box-shadow: 0 3px 7px -3px #101624;
     padding: 0 10px 0 10px;
   }
-  #home_button  {
-    width: 60%;
-  }
-  #home_button_small {
-    
-    color: transparent;
-  }
 
-  @media only screen and (max-width: 1230px) {
+  @media only screen and (max-width: 960px) {
+    header {
+      height: 200px;
+    }
 
-  }
-  @media only screen and (max-width: 1005px) {
     nav {  
-    font-size: 15px;
+      font-size: 15px;
+    }
+
   }
   #home_button  {
-    color: transparent;
-  }
-  #home_button_small {
-    color: white;
-  }
-
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   #home_button > a {
@@ -52,7 +46,7 @@ body  {
     linear-gradient(90deg, #DC3F3D, #E65F5C);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: white;
     transition: filter 800ms;
   }
 
@@ -73,11 +67,36 @@ body  {
   #intro {
     width: 400px;
   }
+
+  #avatar_img {
+    /* PULSING EFFECT ON IMAGE */
+    border-radius: 50%;
+    background-color: #101624;
+    animation: pulse 1500ms infinite;
+  }
+
+  #avatar_img:hover {
+    /* PULSING EFFECT DISSAPEARENCE WHILE HOVERING */
+    background-color: transparent;
+    animation: none;
+  }
+
+  /* PULSING EFFECT KEYFRAMES */
+  @keyframes pulse {
+    0% {
+      box-shadow: #101624 0 0 0 0;
+    }
+    75% {
+      box-shadow: #10162400 0 0 0 16px;
+    }
+  }
+
   #languages {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
     background: #152547;
+    box-shadow: 0 3px 7px -3px #101624, 0 -3px 7px -3px #101624;
   }
   #projects {
     padding: 182.4px 0 172.4px 0;
@@ -91,6 +110,13 @@ body  {
     margin: 15px;
     background-color: #101624;
     width: 300px;
+    animation: none;
+
+  }
+  .projects_examples:hover {
+    /* PULSING EFFECT ON PROJECT EXAMPLES*/
+    background-color: #101624;
+    animation: pulse 1500ms infinite;
   }
   nav a {
     padding: 10px;
@@ -102,6 +128,7 @@ body  {
     justify-content: space-around;
     padding: 0 10px 0 10px;
     margin: auto;
+    box-shadow: 0 3px 7px -3px #101624, 0 -3px 7px -3px #101624;
   }
   
   #contact div {
