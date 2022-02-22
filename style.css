@@ -91,6 +91,7 @@ body  {
     }
   }
 
+
   #languages {
     display: flex;
     justify-content: space-around;
@@ -98,11 +99,11 @@ body  {
     background: #152547;
     box-shadow: 0 3px 7px -3px #101624, 0 -3px 7px -3px #101624;
   }
+
   #projects {
     padding: 182.4px 0 172.4px 0;
     text-align: center;
     margin: 0px 0px 10px 0;
-    
   }
 
   .projects_examples {
@@ -111,7 +112,6 @@ body  {
     background-color: #101624;
     width: 300px;
     animation: none;
-
   }
   .projects_examples:hover {
     /* PULSING EFFECT ON PROJECT EXAMPLES*/
@@ -154,7 +154,7 @@ body  {
   }
 
   a:hover {
-
+    /* LINK ANIMATION */
     background-size: 100% 100%;
     background-position-x: left;
   }
