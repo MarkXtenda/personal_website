@@ -1,5 +1,6 @@
 # Personal Portfolio Website
 
+https://markxtenda.github.io/personal_website/
 This is the source code for my personal portfolio website, showcasing my skills and projects.
 
 ## Technologies Used 
@@ -15,4 +16,3 @@ Open the index.html file in your browser to view the website
 
 Feel free to fork the repository and make changes to improve the website. If you have any suggestions or improvements, please open a pull request.
 
-https://markxtenda.github.io/personal_website/
