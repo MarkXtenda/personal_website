@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-Link: https://markxtenda.github.io/personal_website/
+<p align="center">Link: https://markxtenda.github.io/personal_website/</p>
 
 This is the source code for my personal portfolio website, showcasing my skills and projects.
 
