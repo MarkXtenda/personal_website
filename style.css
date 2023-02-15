@@ -105,13 +105,18 @@ body  {
     text-align: center;
     margin: 0px 0px 10px 0;
   }
-
+  #projects_menu { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .projects_examples {
     display: inline-block;
     margin: 15px;
     background-color: #101624;
     width: 300px;
     animation: none;
+    height: 300px;
   }
   .projects_examples:hover {
     /* PULSING EFFECT ON PROJECT EXAMPLES*/
