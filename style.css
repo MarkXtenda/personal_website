@@ -117,6 +117,7 @@ body  {
     width: 300px;
     animation: none;
     height: 300px;
+    padding: 20px;
   }
   .projects_examples:hover {
     /* PULSING EFFECT ON PROJECT EXAMPLES*/
